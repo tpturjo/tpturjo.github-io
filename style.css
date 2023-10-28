@@ -1,84 +1,95 @@
 /* Resetting default styles */
 body, h1, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Setting the font and background color */
-  body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  .logo {
-    font-size: 2rem;
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-  }
-  
-  .menu a:hover {
-    color: #bbb;
-  }
-  
-  /* Main content styles */
-  main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  section {
-    margin: 2rem 0;
-    text-align: left;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  /* Footer styles */
-  footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #333;
-    color: white;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting the font and background color */
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #bbb;
+}
+
+/* Main content styles */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #333;
+  color: white;
+}
+.profile-picture {
+  max-width: 200px; /* Set the maximum width to the size you desire */
+  margin: 0 auto;   /* Center the image horizontally */
+  border: 2px solid #555; /* Add a border to give it a neat look */
+  border-radius: 50%;   /* Make the image round (for a circular profile picture) */
+}
+
+.profile-picture img {
+  max-width: 100%; /* Ensure the image scales within the container */
+  display: block;  /* Remove any default spacing or alignment issues */
+}
+
