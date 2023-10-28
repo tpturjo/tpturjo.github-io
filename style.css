@@ -74,6 +74,18 @@ ul {
   list-style: none;
 }
 
+/* Experience section styles */
+.experience-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience-list li {
+  flex: 0 0 calc(50% - 1rem); /* Two items per row with some spacing in between */
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* Footer styles */
 footer {
   text-align: center;
@@ -81,6 +93,7 @@ footer {
   background-color: #333;
   color: white;
 }
+
 .profile-picture {
   max-width: 200px; /* Set the maximum width to the size you desire */
   margin: 0 auto;   /* Center the image horizontally */
@@ -93,3 +106,13 @@ footer {
   display: block;  /* Remove any default spacing or alignment issues */
 }
 
+/* About Me section styles */
+#about {
+  text-align: justify; /* Justify the text for better alignment */
+}
+
+#about p {
+  max-width: 600px; /* Set a maximum width for the text for better readability */
+  margin: 0 auto; /* Center the text within the section */
+  line-height: 1.6; /* Adjust the line height for better readability */
+}
