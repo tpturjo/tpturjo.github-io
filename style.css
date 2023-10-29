@@ -81,8 +81,7 @@ ul {
 }
 
 .experience-list li {
-  flex: 0 0 calc(50% - 1rem); /* Two items per row with some spacing in between */
-  margin-right: 1rem;
+  flex: 0 0 calc(50% - 1rem); 
   margin-bottom: 1rem;
 }
 
@@ -95,24 +94,52 @@ footer {
 }
 
 .profile-picture {
-  max-width: 200px; /* Set the maximum width to the size you desire */
-  margin: 0 auto;   /* Center the image horizontally */
-  border: 2px solid #555; /* Add a border to give it a neat look */
-  border-radius: 50%;   /* Make the image round (for a circular profile picture) */
-}
+  max-width: 200px; 
+  margin: 0 auto;   
+  border: 2px solid #555; 
+  border-radius: 50%;   
 
 .profile-picture img {
-  max-width: 100%; /* Ensure the image scales within the container */
-  display: block;  /* Remove any default spacing or alignment issues */
+  max-width: 100%; 
+  display: block;  
 }
 
 /* About Me section styles */
 #about {
-  text-align: justify; /* Justify the text for better alignment */
+  text-align: justify; 
 }
 
 #about p {
-  max-width: 600px; /* Set a maximum width for the text for better readability */
-  margin: 0 auto; /* Center the text within the section */
-  line-height: 1.6; /* Adjust the line height for better readability */
+  max-width: 600px; 
+  margin: 0 auto; 
+  line-height: 1.6; 
+
+/* Projects section styles */
+#projects {
+  text-align: left;
+}
+
+.project {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Adjusting spacing and borders */
+.project:last-child {
+  margin-bottom: 0;
+  border: none;
 }
