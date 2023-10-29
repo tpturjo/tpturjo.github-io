@@ -81,7 +81,7 @@ ul {
 }
 
 .experience-list li {
-  flex: 0 0 calc(50% - 1rem); 
+  flex: 0 0 calc(50% - 1rem);
   margin-bottom: 1rem;
 }
 
@@ -98,10 +98,11 @@ footer {
   margin: 0 auto;   
   border: 2px solid #555; 
   border-radius: 50%;   
+}
 
 .profile-picture img {
   max-width: 100%; 
-  display: block;  
+  display: block; 
 }
 
 /* About Me section styles */
@@ -113,6 +114,7 @@ footer {
   max-width: 600px; 
   margin: 0 auto; 
   line-height: 1.6; 
+}
 
 /* Projects section styles */
 #projects {
