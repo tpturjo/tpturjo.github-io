@@ -74,13 +74,13 @@ ul {
   list-style: none;
 }
 
-/* Experience section styles */
-.experience-list {
+/* Technical Competencies section styles */
+.TechnicalCompetencies-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.experience-list li {
+.TechnicalCompetencies-list li {
   flex: 0 0 calc(50% - 1rem);
   margin-bottom: 1rem;
 }
