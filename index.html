@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <header>
@@ -40,19 +41,19 @@
       <ul class="TechnicalCompetencies-list">
         <li>
           <h3>Programming Languages</h3>
-          <p>Python, Java, C, Verilog, JavaScript (learning)</p>
+          <p>Python, Java, C, Verilog, JavaScript</p>
         </li>
         <li>
           <h3>Web Development</h3>
-          <p>HTML, CSS, Node.js (learning)</p>
+          <p>HTML, CSS, Node.js</p>
         </li>
         <li>
           <h3>Frameworks</h3>
-          <p>Bottle</p>
+          <p>Bottle, Express (Node.js)</p>
         </li>
         <li>
           <h3>Libraries</h3>
-          <p>Pandas</p>
+          <p>Pandas, NumPy, Matplotlib</p>
         </li>
         <li>
           <h3>Databases</h3>
@@ -67,7 +68,12 @@
     <section id="projects">
       <h1>Projects</h1>
       <div class="project">
-        <h2>Project Name:Simple ATM Application</h2>
+        <h2>Simple ATM Application</h2>
+        <span class="project-date">June 2023 - July 2023</span> 
+        <p>A Java-based application simulating an ATM's core functionalities with a user-friendly interface.</p>
+      <button class="details-btn" onclick="toggleDetails('project1Details')">Details</button>
+      <a href="https://github.com/tpturjo/Simple-ATM-Application" target="_blank" class="github-link">View on GitHub</a>
+      <div class="project-details" id="project1Details">
         <h3>Overview</h3>
         <p>The "Simple ATM Application" is a comprehensive Java-based simulation that emulates the core functionalities of a typical Automated Teller Machine (ATM). This project is not just a demonstration of my ability to replicate an ATM's functionality, but 
           it also 
@@ -88,11 +94,16 @@
         <p>The Simple ATM Application is a testament to my capabilities in Java programming and GUI development. It serves as a practical example of how software can be designed to simplify and emulate real-world financial transactions, making it a significant
            and relevant 
           addition to my portfolio.
-
         </p>
       </div>
+      </div>
       <div class="project">
-        <h2>Project Name: Personal Portfolio Website</h2>
+        <h2>Personal Portfolio Website</h2>
+        <span class="project-date">October 2023 - Present</span>
+        <p>An evolving platform showcasing my web development journey, crafted with HTML and CSS.</p>
+        <button class="details-btn" onclick="toggleDetails('project2Details')">Details</button>
+        <a href="https://github.com/tpturjo/tpturjo.github.io" target="_blank" class="github-link">View on GitHub</a>
+        <div class="project-details" id="project2Details">
         <h3>Overview</h3>
         <p>The "Personal Portfolio Website" represents my initial foray into the realm of web development, crafted with a blend of HTML and CSS. This project is more than just a showcase of my current skills and experiences; it's a dynamic platform that evolves
            alongside my learning journey. Rooted in simplicity yet aspiring towards complexity, this website stands as a testament to my growth and dedication in the field of web development.</p>
@@ -109,8 +120,14 @@
         <p>My "Personal Portfolio Website" is more than just a beginner's project; it is a cornerstone in my journey as a web developer. It embodies my enthusiasm for learning and my ambition to create web pages that are not only functional but also 
           aesthetically pleasing. This project will continually evolve, mirroring my progress and the new heights I aspire to reach in the field of web development.</p>
       </div>
+    </div>
       <div class="project">
-        <h2>Project Name: Performance Review Web Application</h2>
+        <h2>Performance Review Web Application</h2>
+        <span class="project-date">October 2023 - December 2023</span>
+        <p>A full-stack project for managing and sharing professional reviews, demonstrating agile development practices.</p>
+      <button class="details-btn" onclick="toggleDetails('project3Details')">Details</button>
+      <a href="https://github.com/tpturjo/Performance-Review-Web-Application" target="_blank" class="github-link">View on GitHub</a>
+      <div class="project-details" id="project3Details">
         <h3>Overview</h3>
         <p>The Performance Review Web Application project exemplifies a modern, agile approach to full-stack development, culminating in a robust platform for managing and sharing professional reviews. Over three months and 45 scrum meetings, our team 
           meticulously crafted 
@@ -136,20 +153,50 @@
           not only embodies a harmonious blend of
            functionality and user experience but also serves as a benchmark for future endeavors in developing scalable, industry-standard web applications.</p>
       </div>
-    </section>
+    </div>
+
     <section id="contact">
       <h1>Contact Me</h1>
-      <ul class="contact-list">
-        <li><a href="mailto:turjopaul2000@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/tridib-paul-turjo-3419a8214/">LinkedIn</a></li>
-        <li><a href="https://github.com/tpturjo">GitHub</a></li>
-        <li><a href="https://www.facebook.com/turjo.paul.50?mibextid=ZbWKwL">Facebook</a></li>
-        <li><a href="https://www.instagram.com/turjopaul/">Instagram</a></li>
-      </ul>
+      <div class="contact-options">
+        <a href="mailto:turjopaul2000@gmail.com" class="contact-option email" target="_blank">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://linkedin.com/in/tpturjo" class="contact-option linkedin" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/tpturjo" class="contact-option github" target="_blank">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.facebook.com/turjopl/" class="contact-option facebook" target="_blank">
+          <i class="fab fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/turjopaul/" class="contact-option instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
     </section>
+    
+    <script>
+      function toggleDetails(detailsId) {
+  var x = document.getElementById(detailsId);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block"; // This will show the element if it was not 'none' or 'block'
+  }
+}
+
+  </script>
+  </body>
+  </html>
   </main>
   <footer>
-    <p>&copy; 2023 Tridib Paul Turjo. All Rights Reserved.</p>
+    <p>&copy; 2024 Tridib Paul Turjo. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
