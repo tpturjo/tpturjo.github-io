@@ -1,215 +1,178 @@
-/* Resetting default styles */
-body, h1, p, ul, li {
+/* General styling reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Setting the font and background color */
-body {
-  font-family: sans-serif;
-  background-color: #f0f0f0;
+/* Navigation styling */
+.navbar {
+  background-color: #222;  /* Dark background for the navbar */
 }
 
-/* Header styles */
-header {
-  background-color: #333;
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Full-width background section for the heading */
+#intro {
+  background-color: #111;  /* Dark background */
   color: white;
-  padding: 1rem 0;
-}
-
-nav {
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  min-height: 500px;  /* Adds more height to the intro section */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  width: 100%;
 }
 
-.logo {
-  font-size: 2rem;
+#dynamicHeading {
+  font-size: 4rem;  /* Larger font size */
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.menu a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
-
-.menu a:hover {
+#intro p {
+  font-size: 1.5rem;
   color: #bbb;
+  margin-bottom: 2rem;
 }
 
-/* Main content styles */
-main {
-  max-width: 960px;
+/* Profile picture - centered and styled */
+.profile-picture {
+  display: block;
+  margin: 30px auto;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Section common styling */
+.section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section heading with long underline */
+.section h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  color: #333;
+}
+
+.section h1::after {
+  content: "";
+  display: block;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #333;
+  margin-top: 10px;
 }
 
-section {
-  margin: 2rem 0;
-  text-align: left;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-p {
+/* About Me section */
+#about p {
+  line-height: 1.6;
   font-size: 1.2rem;
   color: #555;
 }
 
-ul {
-  list-style: none;
+/* Education Section */
+.memorial-logo {
+  max-width: 120px;
+  height: auto;
+  margin-right: 20px;
+  margin-top: -10px;
 }
-#education, #Technical\ Competencies, #projects {
-  background-color: #f9f9f9;
-  border-left: 5px solid #070000; 
+
+.education-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: transparent;
   padding: 20px;
-  margin: 20px 0;
 }
-/* Technical Competencies section styles */
+
+/* Technical Competencies Section */
 .TechnicalCompetencies-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .TechnicalCompetencies-list li {
   flex: 0 0 calc(50% - 1rem);
   margin-bottom: 1rem;
+  list-style-type: none;
 }
 
-/* Footer styles */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #333;
-  color: white;
-}
-
-.profile-picture {
-  max-width: 200px; 
-  margin: 0 auto;   
-  border: 2px solid #555; 
-  overflow: hidden;
-}
-
-.profile-picture img {
-  max-width: 100%; 
-  display: block; 
-}
-
-/* About Me section styles */
-#about {
-  text-align: justify; 
-}
-
-#about p {
-  max-width: 600px; 
-  margin: 0 auto; 
-  line-height: 1.6; 
-}
-/* Education section styles */
-#education {
-  background-color: #f9f9f9; 
-  padding: 20px;
-  border-left: 5px solid #333; 
-  margin: 20px 0;
-}
-
-.education-item {
-  margin-bottom: 15px;
-}
-
-.education-item h2 {
-  font-size: 1.5rem;
+.TechnicalCompetencies-list h3 {
+  font-size: 1.4rem;
   font-weight: bold;
+  color: #333;
 }
 
-.education-item p {
+.TechnicalCompetencies-list p {
   font-size: 1.2rem;
   color: #555;
-  margin-left: 20px; 
 }
 
-.fas {
-  margin-right: 10px; 
-  color: #333; 
-}
-
-
-/* Projects section styles */
-#projects {
-  text-align: left;
-}
-
+/* Projects Section */
 .project {
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid #ddd;
   background-color: #fff;
+  border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .project h2 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
 }
 
 .project p {
   font-size: 1.2rem;
   color: #555;
-  line-height: 1.6;
-  text-align: justify; 
-}
-
-/* Adjusting spacing and borders */
-.project:last-child {
-  margin-bottom: 0;
-  border: none;
-}
-
-.details-btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border: 2px solid white; /* Matches the text color of your menu */
-  background-color: #333; /* Matches the background color of your header */
-  color: white;
-  border-radius: 5px;
-  transition: background-color 0.3s, border-color 0.3s;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-}
-
-.details-btn:hover {
-  background-color: white;
-  color: #333;
-  border-color: #333;
 }
 
 .github-link {
   display: inline-block;
-  background-color: #333; /* Matches the button color */
+  background-color: #333;
   color: white;
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 5px;
-  font-size: 1rem;
   margin-top: 1rem;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .github-link:hover {
@@ -217,60 +180,461 @@ footer {
   color: #333;
 }
 
-
-.project-details {
-  display: none;
-  margin-top: 20px;
-}
-
-.project-date {
-  display: block; /* or 'inline-block' depending on your design */
-  color: #777;
-  font-size: 0.9rem;
-  margin-bottom: 10px; /* Adjust as necessary */
-}
+/* Contact Section */
 #contact {
   text-align: center;
-  background-color: #333; /* Or another color that stands out */
-  padding: 2rem 0;
+  background-color: #111;  /* Match background color with the intro section */
+  padding: 0.5rem 0;
+  color: white;
 }
 
 #contact h1 {
-  color: white;
-  margin: 0; /
-  padding-bottom: 1rem; 
+  margin-bottom: 1 rem;
+  color: #fff;  /* White text for the section heading */
 }
 
 .contact-options {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .contact-option {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 0.5rem;
+  color: white;
+  background-color: #333;  /* Darker background for icons */
+  border-radius: 5px;
   text-decoration: none;
-  color: white; /* Or another color for text */
-  background: #444; /* Slightly lighter background for the icons */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-option i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.contact-option span {
-  font-size: 1.2rem;
-}
-
 .contact-option:hover {
+  background-color: #444;
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.contact-option span {
+  font-size: 0.9rem;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #222;  /* Match footer color with the navbar */
+  color: white;
+}
+
+/* Reduce gap between Education heading and content */
+#education h1 {
+  margin-bottom: -25px;
+}
+
+/* Education Section */
+#education .about-box {
+  background-color: transparent;
+}
+
+/* Technical Competencies Section */
+#technical-competencies {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.technical-card {
+  background-color: #fff;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 45%;
+  text-align: center;
+}
+
+.technical-card:hover {
+  transform: translateY(-10px);
+}
+
+.technical-card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.technical-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.technical-icon {
+  font-size: 2rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Flexbox styling for two-column layout */
+.technical-competencies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .technical-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Projects Section */
+#projects h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  color: #333;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Header - Icon and Title */
+.project-header {
+  display: flex;
+  align-items: center;
+}
+
+.project-icon {
+  font-size: 2rem;
+  color: #333;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Project Date */
+.project-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+.details-btn {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* GitHub Link Styling */
+.github-link {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Project Details */
+.project-details {
+  display: none;
+  text-align: left;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-details h4 {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.project-details p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Section heading with long underline */
+.section-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  color: #333;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid #333;
+  margin-top: 10px;
+}
+
+
+/* Experience Section */
+#experience {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#experience .experience-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.experience-details {
+  flex-basis: 70%;
+  text-align: left;
+}
+
+.experience-icon {
+  flex-basis: 20%;
+  text-align: right;
+}
+
+.experience-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.experience-date-location {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.experience-duties {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.experience-duties li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.experience-duties li::before {
+  content: "\2022"; /* Bullet point symbol */
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.experience-icon img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+
+/* Media query for mobile phones */
+@media (max-width: 768px) {
+  /* Reduce padding in sections */
+  .section {
+    padding: 20px 10px;
+  }
+
+  /* Adjust profile picture size for mobile */
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Reduce font sizes for mobile */
+  #dynamicHeading {
+    font-size: 2.5rem; /* Make it smaller on mobile */
+  }
+
+  .section h1 {
+    font-size: 2rem;
+  }
+
+  .experience-card {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-details {
+    flex-basis: 100%;
+  }
+
+  .experience-icon {
+    flex-basis: 100%;
+    margin-top: 15px;
+  }
+
+  .technical-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .technical-icon {
+    font-size: 1.5rem; /* Make icons smaller for mobile */
+  }
+
+  .github-link {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Same box shadow as other sections */
+}
+
+.project-card {
+  background-color: #fff; /* White background for the project card */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow to give depth */
+  border: 1px solid #ddd; /* Optional border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+/* Remove the experience section's custom flex styles */
+#experience {
+  background-color: #f8f9fa; /* Same as other sections */
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Same box-shadow as other sections */
+}
+
+.experience-card {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box-shadow for depth */
+  border: 1px solid #ddd; /* Optional border */
+  text-align: left;
+}
+
+.experience-details {
+  margin-bottom: 15px;
+}
+
+.experience-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.experience-date-location {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.experience-duties {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.experience-duties li {
+  margin-bottom: 5px;
+}
