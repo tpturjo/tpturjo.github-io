@@ -7,7 +7,7 @@
 
 /* Navigation styling */
 .navbar {
-  background-color: #222;  /* Dark background for the navbar */
+  background-color: #222;  
 }
 
 .navbar-nav .nav-link {
@@ -23,12 +23,12 @@
 
 /* Full-width background section for the heading */
 #intro {
-  background-color: #111;  /* Dark background */
+  background-color: #111;  
   color: white;
   text-align: center;
   padding: 100px 20px;
   position: relative;
-  min-height: 500px;  /* Adds more height to the intro section */
+  min-height: 500px;  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 #dynamicHeading {
-  font-size: 4rem;  /* Larger font size */
+  font-size: 4rem; 
   font-weight: bold;
   color: #fff;
   margin-bottom: 20px;
@@ -183,16 +183,15 @@
 /* Contact Section */
 #contact {
   text-align: center;
-  background-color: #111;  /* Match background color with the intro section */
+  background-color: #111;  
   padding: 0.5rem 0;
   color: white;
 }
 
 #contact h1 {
   margin-bottom: 1 rem;
-  color: #fff;  /* White text for the section heading */
+  color: #fff;  
 }
-
 .contact-options {
   display: flex;
   justify-content: center;
@@ -205,7 +204,7 @@
   align-items: center;
   padding: 0.5rem;
   color: white;
-  background-color: #333;  /* Darker background for icons */
+  background-color: #333; 
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
@@ -229,7 +228,7 @@
 footer {
   text-align: center;
   padding: 0.5rem 0;
-  background-color: #222;  /* Match footer color with the navbar */
+  background-color: #222;  
   color: white;
 }
 
@@ -511,7 +510,6 @@ footer {
 
 /* Media query for mobile phones */
 @media (max-width: 768px) {
-  /* Reduce padding in sections */
   .section {
     padding: 20px 10px;
   }
@@ -524,15 +522,14 @@ footer {
 
   /* Reduce font sizes for mobile */
   #dynamicHeading {
-    font-size: 2.5rem; /* Make it smaller on mobile */
+    font-size: 2.5rem; 
   }
-
   .section h1 {
     font-size: 2rem;
   }
 
   .experience-card {
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
@@ -552,7 +549,7 @@ footer {
   }
 
   .technical-icon {
-    font-size: 1.5rem; /* Make icons smaller for mobile */
+    font-size: 1.5rem; 
   }
 
   .github-link {
@@ -568,41 +565,41 @@ footer {
   text-align: center;
   margin-top: 30px;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Same box shadow as other sections */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .project-card {
-  background-color: #fff; /* White background for the project card */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #fff;
+  border-radius: 10px; 
   padding: 20px;
   margin-bottom: 30px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow to give depth */
-  border: 1px solid #ddd; /* Optional border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #ddd; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: scale(1.03); /* Slight zoom on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+  transform: scale(1.03); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
-/* Remove the experience section's custom flex styles */
+
 #experience {
-  background-color: #f8f9fa; /* Same as other sections */
+  background-color: #f8f9fa; 
   padding: 50px 20px;
   text-align: center;
   margin-top: 30px;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Same box-shadow as other sections */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .experience-card {
-  background-color: #fff; /* White background */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; 
+  border-radius: 10px; 
   padding: 20px;
   margin-bottom: 30px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box-shadow for depth */
-  border: 1px solid #ddd; /* Optional border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #ddd;
   text-align: left;
 }
 
